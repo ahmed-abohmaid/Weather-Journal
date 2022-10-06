@@ -7,7 +7,7 @@ console.log(newDate);
 const baseURL = "https://api.openweathermap.org/data/2.5/weather?zip=";
 
 // API key
-const apiKey = ",&units=metric&appid=85c0f776eb74302abca0fe9b5ae8a413";
+const apiKey = ",&units=metric&appid={your api key}";
 
 // URL for the server
 const server = "http://localhost:8080";
