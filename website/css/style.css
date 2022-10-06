@@ -1,0 +1,227 @@
+/* Start Variables */
+:root {
+  --main-duration: 0.3s;
+  --main-color: #19c8fa;
+  --hover-color: #0fa0c8d6;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size: cover;
+  font-size: 115%;
+}
+/* End Global Rules */
+/* Start Custom Use */
+.input__style {
+  background: #7c7c7c2b;
+  color: #fff;
+  padding: 1em;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 2em;
+  width: 100%;
+  font-family: inherit;
+  caret-color: var(--main-color);
+  z-index: 1;
+}
+
+.input__style:focus {
+  outline: none;
+}
+
+.input__style::placeholder {
+  transition: var(--main-duration);
+}
+
+.input__style:focus::placeholder {
+  opacity: 0;
+}
+
+/* For the informayion of weather */
+.info__padding {
+  padding: 0.4em 0;
+}
+/* End Custom Use */
+
+.title {
+  position: fixed;
+  top: 0;
+  font-weight: bold;
+  background-color: var(--main-color);
+  padding: 1em;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+  color: #fff;
+  z-index: 9999;
+}
+
+/* Start Weather Card */
+.card {
+  background: #000000d0;
+  color: white;
+  position: relative;
+  top: 70px;
+  padding: 2em;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 20px;
+  margin: 1.5em auto;
+}
+
+@media (max-width: 767px) {
+  .card {
+    max-width: 350px;
+    font-size: 14px;
+  }
+}
+
+button#generate {
+  margin: 0 auto;
+  display: flex;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: var(--main-color);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+
+button#generate::before {
+  content: "";
+  background-color: var(--hover-color);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform var(--main-duration) ease-in;
+  transform-origin: right;
+  z-index: -1;
+}
+
+button#generate:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* End Weather Card */
+/* Start Info */
+#box {
+  background: #000000d0;
+  color: white;
+  padding: 1em;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 6px;
+  margin: 5em auto;
+  opacity: 0;
+  transition: 1.5s ease-in;
+}
+
+@media (max-width: 500px) {
+  #box {
+    margin: 6em auto;
+    max-width: 356px;
+  }
+}
+
+@media ((min-width: 501px) and (max-width: 767px)) {
+  #box {
+    max-width: 470px;
+  }
+}
+
+@media ((min-width: 768px) and (max-width: 960px)) {
+  #box {
+    max-width: 700px;
+  }
+}
+
+#city {
+  margin: 2em 0 0.5em;
+  color: var(--main-color);
+}
+
+#date {
+  align-self: flex-end;
+  font-size: 25px;
+}
+
+#temp {
+  margin: 0.5em 0 1em;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  #city h1 {
+    font-size: 1.4em;
+  }
+
+  #date {
+    font-size: 1em;
+  }
+
+  #temp {
+    font-size: 1.3em;
+  }
+}
+
+.detaled__info {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+}
+
+#entry__holder .status {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .detaled__info {
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+#entry__holder .status .icon {
+  position: relative;
+  top: -15px;
+}
+
+p#feeling {
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+  p#feeling {
+    padding-top: 15px;
+    font-size: 16px;
+  }
+}
+/* End Info */

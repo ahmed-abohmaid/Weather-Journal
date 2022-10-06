@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Journal</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="title">Weather App</div>
+    <div class="card">
+      <div class="weather__search">
+        <input
+          type="text"
+          id="zip"
+          class="input__style"
+          placeholder="Zipcode For A City You Want"
+        />
+        <input
+        type="text"
+        id="feelings"
+        class="input__style"
+        placeholder="What Is Your Feelings Today?"
+        />
+        <!-- For Change Inputs -->
+        <button id="generate">Generate</button>
+      </div>
+    </div>
+    <div id="box">
+      <div id="entry__holder">
+        <div id="city">
+          <h1>Weather In <span class="city__name">Cairo</span></h1>
+        </div>
+        <div id="date"><h2>15/10/2022</h2></div>
+        <div id="temp"><h3>34&deg;C</h3></div>
+        <div class="detaled__info">
+          <div class="status info__padding">
+            <img src="https://openweathermap.org/img/wn/01d.png" alt="icon" class="icon" />
+            <p id="status__info">Clear Sky</p>
+          </div>
+          <p id="humidity" class="info__padding">Humidity: 21%</p>
+          <p id="wind" class="info__padding">Wind: 6.4km/h</p>
+        </div>
+        <p id="feeling"></p>
+      </div>
+    </div>
+    <!-- link script file -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
