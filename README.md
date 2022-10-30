@@ -4,6 +4,7 @@
 
 *  [Description](#description)
 *  [Technologies](#technologies)
+*  [Loading](#loading)
 *  [License](#license)
 
 <hr>
@@ -11,11 +12,22 @@
 ## Description
 This is the first project using Node.js & Express makes you to know the weather of any city you want.
 
-Live Project :
-<a target="_blank" href="https://ahmed-abohmaid.github.io/Weather-App/website/index.html" alt="Weather App">Weather App</a>
+---
+## Loading
+How to load the app:
 
-<hr>
+The project uses Node.js , if you do not have Node you can download it from: [Node.js](https://nodejs.org/en/)
 
+After Node is installed run this code in your local machine:
+
+```
+git clone https://github.com/Ahmed-AboHmaiD/Weather-Journal.git
+npm install
+```
+### YOU WILL NEED TO PUT YOUR OWN API THEN PUT IT IN JAVASCRIPT CODE
+You can git your own API from: [openweathermap](https://openweathermap.org/api)
+
+---
 ## Technologies 
 
 [![My Skills](https://skillicons.dev/icons?i=css,html,js,&perline=10)](https://skillicons.dev)
