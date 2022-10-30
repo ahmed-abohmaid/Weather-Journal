@@ -30,7 +30,7 @@ You can git your own API from: [openweathermap](https://openweathermap.org/api)
 ---
 ## Technologies 
 
-[![My Skills](https://skillicons.dev/icons?i=css,html,js,&perline=10)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=css,html,js,nodejs,expressjs,&perline=10)](https://skillicons.dev)
 
 <hr>
 
