@@ -11,7 +11,9 @@
 
 ## Description
 This is the first project using Node.js & Express makes you to know the weather of any city you want.
-
+<br>
+![alt text](./website/Weather/image_large.png)
+![alt text](./website/Weather/image_small.png)
 ---
 ## Loading
 How to load the app:
